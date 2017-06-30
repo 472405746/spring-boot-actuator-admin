@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-actuator-admin'
+include 'client1'
+include 'client2'
+include 'admin'
+

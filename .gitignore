@@ -3,8 +3,6 @@
 .gradle/
 .idea/
 admin/build/
-admin/src/test/
-build.gradle
 client1/build/
 client2/build/
-settings.gradle
+
