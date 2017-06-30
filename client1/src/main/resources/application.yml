@@ -1,0 +1,37 @@
+info:
+    desc: client1
+server:
+  port: 8081
+management:
+  context-path: "/actuator"
+  security:
+    enabled: true
+spring.application.name: CLIENT-1
+spring:
+  boot:
+    admin:
+      url: http://localhost:8080 #注册服务器的地址
+      username: admin #注册的目标服务器端的用户名密码
+      password: admin
+      client:  # 告诉服务端访问我接口的用户名以及密码
+        metadata:
+           user.name: "${security.user.name}"
+           user.password: "${security.user.password}"
+        name: client11111
+
+security:
+  user:
+    name: user
+    password: password
+  basic:
+    enabled: true # 设置验证模式为basic admin服务器请求actuator时会使用客户端的发送的用户名密码
+  ignored:
+      - /api/**
+      - /index
+      - /
+
+logging:
+  level: info
+logging.level.rg.springframework: trace
+
+

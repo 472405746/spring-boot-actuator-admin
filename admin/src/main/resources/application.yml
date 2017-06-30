@@ -1,0 +1,15 @@
+info:
+    desc: spring-boot-admin-web
+server:
+  port: 8080
+management:
+  context-path: "/actuator"
+  security:
+    enabled: true
+spring.application.name: SPRING-BOOT-ADMIN-WEB
+security:
+  user: # 服务器端登录 以及其他客户端向服务器注册的用户名密码
+    name: admin
+    password: admin
+logging.level.de.codecentric.boot: trace
+

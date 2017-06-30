@@ -1,0 +1,11 @@
+group 'io.github.mylyed'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile group: 'de.codecentric', name: 'spring-boot-admin-server', version: '1.5.2'
+    compile group: 'de.codecentric', name: 'spring-boot-admin-server-ui', version: '1.5.2'
+    compile group: 'de.codecentric', name: 'spring-boot-admin-server-ui-login', version: '1.5.2'
+}
