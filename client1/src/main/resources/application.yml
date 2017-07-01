@@ -25,10 +25,7 @@ security:
     password: password
   basic:
     enabled: true # 设置验证模式为basic admin服务器请求actuator时会使用客户端的发送的用户名密码
-  ignored:
-      - /api/**
-      - /index
-      - /
+    path: "#${management.context-path}/**"
 
 logging:
   level: info
